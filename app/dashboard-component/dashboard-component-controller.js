@@ -38,6 +38,7 @@ var app = angular.module('dashboard').controller('dashboardCtrl',function($scope
          $scope.todoDescription = '';
       };
       $scope.todoDescription = '';
+      $scope.qwer=false;
       $scope.showDesc=function(data)
       {    
         //  document.getElementById("delete"+index).hidden=false;
@@ -46,11 +47,13 @@ var app = angular.module('dashboard').controller('dashboardCtrl',function($scope
     //          else
     //          document.getElementById('desc1').innerHTML="no content";
     $scope.todoDescription = data.description;
+    $scope.qwer=true;
     };
 
         $scope.leaveDesc=function()
         {
         $scope.todoDescription='';
+        $scope.qwer=false;
         // document.getElementById("delete"+index).hidden=true;
            };
 
